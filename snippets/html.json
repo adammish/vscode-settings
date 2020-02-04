@@ -1,0 +1,64 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"php": {
+		"prefix": "php",
+		"description": "Insert PHP statement",
+		"body": "<?php $1 ?>$0"
+	},
+	"echo": {
+		"prefix": "echo",
+		"description": "Insert echo statement",
+		"body": "<?php echo $1 ?>$0"
+	},
+	"if": {
+		"prefix": "if",
+		"description": "Insert if statement",
+		"body": [
+			"<?php if ($1): ?>",
+			"\t$0",
+			"<?php endif ?>"
+		]
+	},
+	"endif": {
+		"prefix": "endif",
+		"description": "Insert endif statement",
+		"body": "<?php endif ?>"
+	},
+	"ifelse": {
+		"prefix": "ifelse",
+		"description": "Insert if/else statement",
+		"body": [
+			"<?php if ($1): ?>",
+			"\t$2",
+			"<?php else: ?>",
+			"\t$0",
+			"<?php endif ?>"
+		]
+	},
+	"foreach": {
+		"prefix": "foreach",
+		"description": "Insert foreach statement",
+		"body": [
+			"<?php foreach ($${1:var} as $${2:${3:key} => $${4:value}}): ?>",
+			"\t$0",
+			"<?php endforeach ?>"
+		]
+	},
+	"endforeach": {
+		"prefix": "endforeach",
+		"description": "Insert endforeach statement",
+		"body": "<?php endforeach ?>"
+	}
+}

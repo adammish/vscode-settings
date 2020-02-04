@@ -1,0 +1,30 @@
+{
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.preferences": {
+        "stylus.valueSeparator": ": "
+    },
+    "php.suggest.basic": false,
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "workbench.startupEditor": "none",
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "intelephense.telemetry.enabled": false,
+    "workbench.colorTheme": "Monokai",
+    "workbench.statusBar.visible": false,
+    "explorer.openEditors.visible": 0,
+    "workbench.activityBar.visible": false,
+    "editor.tabCompletion": "on",
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer"
+    },
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.lastDownload": 1573259512639,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    }
+}

@@ -1,0 +1,31 @@
+{
+	"Public Method": {
+		"prefix": "met",
+		"body": [
+			"public function $1()",
+			"{",
+			"	$2",
+			"}"
+		],
+		"description": "Create a public method"
+	},
+	"Protected Method": {
+		"prefix": "pmet",
+		"body": [
+			"protected function $1()",
+			"{",
+			"	$2",
+			"}"
+		],
+		"description": "Create a protected method"
+	},
+	"Class": {
+		"prefix": "class",
+		"body": [
+			"class ${TM_FILENAME_BASE} {",
+			"\t$2",
+			"}"
+		],
+		"description": "Create a new class"
+	}
+}
